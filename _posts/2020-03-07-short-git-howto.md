@@ -4,7 +4,7 @@ title:  "Short Git HowTo"
 categories: [git, setup, howto]
 ---
 
-# Short Git HowTo
+# {{ page.title }}
 
 ## Installation
 Download latest [git](https://git-scm.com/) release and install.

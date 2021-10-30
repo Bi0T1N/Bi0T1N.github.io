@@ -4,7 +4,8 @@ title:  "Colored source code output with LaTeX and Pygments"
 categories: [latex, python, source code, minted, colorful, Pygments]
 ---
 
-# Colored source code output with LaTeX and Pygments
+# {{ page.title }}
+
 ## Introduction
 If you want to include source code in your LaTeX document, there are several ways.  
 One way is to use the `listings` environment but the default output doesn't look very nice.

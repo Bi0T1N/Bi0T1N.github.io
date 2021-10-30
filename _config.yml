@@ -1,4 +1,8 @@
-theme: jekyll-theme-cayman
-title: [Bi0T1N's GitHub Page]
-description: [Some (hopefully) useful information]
+#theme: jekyll-theme-cayman
+theme: jekyll-theme-hacker
+# webpage title
+title: Bi0T1N's GitHub Page
+# general information
+description: Some (hopefully) useful information
+# provide a download URL?
 show_downloads: false
