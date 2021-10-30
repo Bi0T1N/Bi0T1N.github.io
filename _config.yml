@@ -6,3 +6,7 @@ title: Bi0T1N's GitHub Page
 description: Some (hopefully) useful information
 # provide a download URL?
 show_downloads: false
+# silently generate a sitemaps.org compliant sitemap
+url: "https://Bi0T1N.github.io"
+plugins:
+  - jekyll-sitemap
