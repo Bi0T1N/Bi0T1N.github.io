@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/alpine
+{
+	"name": "Jekyll for GitHub Pages",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [4000, 35729],
+
+	// 'postAttachCommand' to run a command each time a tool has successfully attached to the container.
+	"postAttachCommand": [ "jekyll", "serve", "--livereload", "--force_polling", "-H", "0.0.0.0", "-P", "4000" ],
+
+    // IDs of extensions that are installed when the container is created
+    "extensions": [
+        // jekyll and liquid templating syntax highlighting
+        "sissel.shopify-liquid",
+        // markdown
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint",
+        // editing
+        "streetsidesoftware.code-spell-checker",
+    ]
+}
