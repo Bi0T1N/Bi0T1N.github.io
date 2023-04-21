@@ -4,7 +4,7 @@
   {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
 {% for month in postsByMonth %}
-<h2>{{ month.name }}</h2>
+<h3>{{ month.name }}</h3>
 <ul>
   {% for post in month.items %}
     <li>
