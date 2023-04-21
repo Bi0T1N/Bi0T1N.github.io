@@ -12,14 +12,27 @@
 	// 'postAttachCommand' to run a command each time a tool has successfully attached to the container.
 	"postAttachCommand": [ "jekyll", "serve", "--livereload", "--force_polling", "-H", "0.0.0.0", "-P", "4000" ],
 
-    // IDs of extensions that are installed when the container is created
-    "extensions": [
-        // jekyll and liquid templating syntax highlighting
-        "sissel.shopify-liquid",
-        // markdown
-        "yzhang.markdown-all-in-one",
-        "DavidAnson.vscode-markdownlint",
-        // editing
-        "streetsidesoftware.code-spell-checker",
-    ]
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // IDs of extensions you want installed when the container is created.
+            "extensions": [
+                // jekyll and liquid templating syntax highlighting
+                "sissel.shopify-liquid",
+                // markdown
+                "yzhang.markdown-all-in-one",
+                "DavidAnson.vscode-markdownlint",
+                // editing
+                "streetsidesoftware.code-spell-checker",
+            ]
+        }
+      },
+
+    // A set of simple and reusable Features. Quickly add a language/tool/CLI to a development container.
+    "features": {
+        // Install an up-to-date version of Git.
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "os-provided"
+        }
+    }
 }

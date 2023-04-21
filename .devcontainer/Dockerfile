@@ -2,10 +2,10 @@
 # Create a GitHub Pages container with the required Jekyll dependencies from a Ruby Alpine image
 
 # Currently GitHub requires Ruby 2.7.x, see https://pages.github.com/versions/
-FROM ruby:2.7-alpine
+FROM ruby:2.7-bullseye
 
-# Add Jekyll dependencies to Alpine Ruby image
-RUN apk --no-cache add build-base gcc
+# Update image
+RUN apt update && apt upgrade
 
 # Update dependency manager and install GitHub Pages and its dependencies
 RUN gem update bundler && gem install github-pages
