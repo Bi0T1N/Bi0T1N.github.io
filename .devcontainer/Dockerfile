@@ -4,7 +4,7 @@
 FROM ruby:2.7-bullseye
 
 # Update image
-RUN apt update && apt upgrade
+RUN apt update && apt upgrade -y
 
 # Update dependency manager and install GitHub Pages and its dependencies
 RUN gem update bundler && gem install github-pages
@@ -15,5 +15,5 @@ EXPOSE 4000
 
 CMD [ "jekyll", "serve", "--livereload", "--force_polling", "-H", "0.0.0.0", "-P", "4000" ]
 
-# usage without Visual Studio Code:
+# usage without development containers:
 # docker run -it --rm -v "$PWD":/var/www -p "4000:4000" <image_name>
