@@ -19,7 +19,7 @@ The updated `devcontainer.json` allows to customize for specific editors. It als
 The first step is to create (or re-use) the Dockerfile that specifies your development environment. The [GitHub Pages documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) describes the prerequisites and [dependencies](https://pages.github.com/versions/) for GitHub Pages. This information is contained in the following Dockerfile:
 
 {% highlight docker %}
-# Create a GitHub Pages container with the required Jekyll dependencies from a Ruby Alpine image
+# Create a GitHub Pages container with the required Jekyll dependencies from a Ruby Debian Bullseye image
 
 # Currently GitHub requires Ruby 2.7.x, see https://pages.github.com/versions/
 FROM ruby:2.7-bullseye
