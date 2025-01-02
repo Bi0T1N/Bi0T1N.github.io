@@ -1,7 +1,7 @@
 # Create a GitHub Pages container with the required Jekyll dependencies from a Debian Bullseye image with Ruby
 
-# Currently GitHub requires Ruby 2.7.x, see https://pages.github.com/versions/
-FROM ruby:2.7-bullseye
+# Currently GitHub requires Ruby 3.3.x, see https://pages.github.com/versions/
+FROM ruby:3.3-bookworm
 
 # Update image
 RUN apt update && apt upgrade -y
